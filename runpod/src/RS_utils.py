@@ -53,7 +53,7 @@ class CSACActor(nn.Module):
         dist = torch.distributions.Normal(mu, std)
         action_raw = dist.rsample()
         action_squashed = torch.tanh(action_raw)
-        action_normalized = torch.softmax(action_squashed * 2.0, dim=-1) * self.max_action
+        action_normalized = torch.softmax(action_squashed * 5.0, dim=-1) * self.max_action
         return action_normalized
 
 
