@@ -22,4 +22,4 @@ fi
 echo "Starting Python handler.py..."
 # Execute your main application script
 # The -u flag is for unbuffered output
-python -u ./src/handler.py
+python -u ./src/handler1.py
